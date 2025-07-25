@@ -1,3 +1,7 @@
+---
+import Menu from "../components/Menu.astro";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,28 +12,9 @@
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		<header>
-			<nav>
-			 <!-- este es el lugar donde vamos a ubicar el logo  -->
-             <div></div>
-
-            <!-- esta es la parte derecha del menu -->
-			 <div>
-
-				<ul>
-                  <li>Inicio</li>
-				  <li>Nosotros</li>
-				  <li>servicios</li>
-				  <li>Herramientas</li>
-				  <li>Contacto</li>
-				</ul>
-
-				<button> <a href="/">Inicia Sesion</a></button>
-
-			 </div>
-
-			</nav>
-		</header>
+		
+		
+		<Menu />
 		
 		<!-- esta parte es donde va a mover las vistas -->
 		<slot />
