@@ -5,25 +5,36 @@
 
 		<!-- esta es la parte derecha del menu -->
 		
+		<div class="container">
 			<ul class="lista">
 				<li><a href="/">Inicio</a></li>
 				<li><a href="/nosotros">Nosotros</a></li>
 				<li><a href="/service">servicios</a></li>
 				<li><a href="/herramientas">Herramientas</a></li>
 				<li><a href="/contacto">Contacto</a></li>
+				
 			</ul>
+			<a href="/"><button> Inicia session</button></a>
 		</div>
 	</nav>
 </header>
 
 <style>
+
+	.container {
+		display: flex;
+		align-items: center;
+		gap: 32px;
+		justify-content: end;
+	}
 	.nav {
 		padding: 12px 90px;
 	}
 	.lista {
 		display: flex;
-		justify-content: center;
+		justify-content: right;
 		align-items: center;
-		gap: 32px;
+		gap: 36px;
+		Height:60px
 	}
 </style>
