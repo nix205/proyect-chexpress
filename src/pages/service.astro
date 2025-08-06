@@ -1,7 +1,38 @@
 ---
+import Tarjeta from "../components/Tarjeta.astro"
 import Layout from "../layouts/Layout.astro"
+import Imagen from '../assets/leon.jpg'
+import Imagen2 from '../assets/catedral-leon.webp'
 ---
 
 <Layout>
-   Esta es la pagina de servicio  
+   <div class="loquetuquieras">
+
+      <Tarjeta 
+         imagen={Imagen.src}
+         titulo="Fotos"
+      />
+
+      <Tarjeta 
+         imagen={Imagen2.src}
+         titulo="Videos"
+      />
+
+      <Tarjeta 
+         imagen={Imagen.src}
+         titulo="Animales"
+      />
+
+      <Tarjeta 
+         imagen={Imagen2.src}
+         titulo="Videos"
+      />
+      
+   </div>
 </Layout>
+
+<style>
+   .loquetuquieras {
+      display: flex;
+   }
+</style>
