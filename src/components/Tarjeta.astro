@@ -1,0 +1,34 @@
+---
+interface Props {
+    imagen: string
+    titulo: string
+}
+
+const { imagen, titulo } = Astro.props
+---
+
+<div class="tarjeta">
+
+    <img src={imagen} alt="">
+
+    <div>
+        <h2>
+            { titulo }
+        </h2>
+    </div>
+
+</div>
+
+<style>
+
+    .tarjeta {
+       flex-basis: 500px;
+    }
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+</style>

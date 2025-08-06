@@ -1,19 +1,29 @@
 <header>
-	<nav>
+	<nav class="nav">
 		<!-- este es el lugar donde vamos a ubicar el logo  -->
 		<div></div>
 
 		<!-- esta es la parte derecha del menu -->
 		
-
-			<button> <a href="/<div>
-			<ul>
-				<li>Inicio</li>
-				<li>Nosotros</li>
-				<li>servicios</li>
-				<li>Herramientas</li>
-				<li>Contacto</li>
-			</ul>">Inicia Sesion</a></button>
+			<ul class="lista">
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/nosotros">Nosotros</a></li>
+				<li><a href="/service">servicios</a></li>
+				<li><a href="/herramientas">Herramientas</a></li>
+				<li><a href="/contacto">Contacto</a></li>
+			</ul>
 		</div>
 	</nav>
 </header>
+
+<style>
+	.nav {
+		padding: 12px 90px;
+	}
+	.lista {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 32px;
+	}
+</style>
