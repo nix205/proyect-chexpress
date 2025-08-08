@@ -1,7 +1,16 @@
+---
+import Logo from '../assets/logo.jpg';
+---
+
 <header>
 	<nav class="nav">
 		<!-- este es el lugar donde vamos a ubicar el logo  -->
-		<div></div>
+		<div>
+			<img src={Logo.src} alt="">
+
+
+			
+		</div>
 
 		<!-- esta es la parte derecha del menu -->
 		
@@ -26,9 +35,15 @@
 		align-items: center;
 		gap: 32px;
 		justify-content: end;
+		font-family: 'Times New Roman', Times, serif;
+		font-size: medium;
+		 
 	}
 	.nav {
 		padding: 12px 90px;
+		display: flex;
+		justify-content: space-between
+		gap: 16px;
 	}
 	.lista {
 		display: flex;
@@ -36,5 +51,9 @@
 		align-items: center;
 		gap: 36px;
 		Height:60px
-	}
-</style>
+		
+		</style>
+
+		<div
+		
+

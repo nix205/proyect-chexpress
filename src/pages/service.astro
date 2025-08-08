@@ -1,19 +1,18 @@
 ---
-import Tarjeta from "../components/Tarjeta.astro"
+
 import Layout from "../layouts/Layout.astro"
 import Imagen from '../assets/leon.jpg'
 import Imagen2 from '../assets/catedral-leon.webp'
+import servicios from "../components/tarjeta de servicio.astro";
+
 ---
 
 <Layout>
    <div class="loquetuquieras">
 
-      <Tarjeta 
-         imagen={Imagen.src}
-         titulo="Fotos"
-      />
+     
 
-      <Tarjeta 
+      <servicios 
          imagen={Imagen2.src}
          titulo="Videos"
       />
