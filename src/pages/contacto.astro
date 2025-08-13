@@ -1,7 +1,44 @@
  ---
 import Layout from "../layouts/Layout.astro"
+import Tarjetamapa from "../components/Tarjetamapa.astro"
 ---
 
 <Layout>
-    esta es la pagina d contacto
+    <div class="contacto"> </div>
+        <h1>Contacto</h1>
+        <p>Departamento de Ventas
+0424-4186613
+0412-4921045
+Departamento de Operaciones
+0412-4656945
+0412-8672645
+Central telefónica:
+0414-4052877</p>
+<img src="📞" alt="25%">
+<p>
+    E-mail: ventas@chxpress.com.ve
+    <img src="✉️" alt="25%">
+</p>
+<p>
+    Dirección:
+    Av. Principal Sector Hacienda Mozanga
+    Galpón CH Express. Zona Postal 2005
+    San Diego Edo Carabobo
+    Venezuela
+    <img src="📍" alt="25%">
+</p>
+    <Tarjetamapa />
+    i
 </Layout>
+<style>
+    .contacto {
+        padding: 20px;
+        font-family: 'times new roman', Times, serif;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: horizontal;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        
+    }
